@@ -1,0 +1,33 @@
+package pkg001;
+
+public class List<T> {
+	
+	private T[] datastore;
+	private int size;
+	private int pos;
+	
+	public List(int numOfElements) {
+		size = numOfElements;
+		pos = 0;
+		datastore = (T[]) new Object[size]; 
+		
+	}
+	
+	public void add(T element) {
+		datastore[pos] = element;
+		pos++;
+	}
+	
+	public String toString(){
+		String elements = "";
+		
+		for(int i=0;i<pos;++i) {
+			elements += datastore[i] + " ";
+			
+		}
+		
+		return elements;
+		
+	}
+
+}
