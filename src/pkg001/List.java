@@ -21,7 +21,7 @@ public class List<T> {
 	public String toString(){
 		String elements = "";
 		
-		for(int i=0;i<pos;++i) {
+		for(int i=0;i<pos;i++) {
 			elements += datastore[i] + " ";
 			
 		}
