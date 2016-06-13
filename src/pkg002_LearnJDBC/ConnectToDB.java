@@ -1,7 +1,6 @@
 package pkg002_LearnJDBC;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.*;
 
 public class ConnectToDB {
 
@@ -10,7 +9,7 @@ public class ConnectToDB {
 		try {
 			
 			String userName = "root";
-			String passWord = "password";
+			String passWord = "root";
 			
 			String url = "jdbc:mysql://localhost/test";
 			
@@ -23,9 +22,19 @@ public class ConnectToDB {
 		
 		catch(Exception e) {
 			
-		System.out.println("Can not connect to database");
+		System.out.println("Can not connect to database :  " + e.toString());
+				
+		}
 		
-			
+		finally {
+			if(conn != null) {
+				try {
+					conn.close();
+					System.out.println("Database Connectiion Closed");
+				} catch (Exception e) {
+					System.out.println("Database Connectiion can not be Closed");
+				}
+			}
 		}
 	}
 	
