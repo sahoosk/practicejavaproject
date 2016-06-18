@@ -7,8 +7,8 @@ import java.net.URLConnection;
 public class UrlProg {
 	public static void main(String[] args) throws Exception {
 
-		URL theURL = new URL("http://www.infiniteskils.com");
-		System.out.println("---Basic Information---");
+		URL theURL = new URL("http://www.infiniteskils.com/");
+		System.out.println("Basic Information");
 		System.out.println();
 		System.out.println("Protocol : " + theURL.getProtocol());
 		System.out.println("Port : " + theURL.getPort());
