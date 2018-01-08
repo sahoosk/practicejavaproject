@@ -5,7 +5,7 @@ public static void main(String[] args) {
 	
 	List<String> glist = new List<>(3);
 	glist.add("Riceeeeee");
-	glist.add("Wheat");
+	glist.add("Wheattttttt");
 	glist.add("Barley");
 	
 	System.out.println(glist.toString());
