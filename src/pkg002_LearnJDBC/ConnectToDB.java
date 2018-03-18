@@ -9,7 +9,7 @@ public class ConnectToDB {
 		try {
 			
 			String userName = "root";
-			String passWord = "root";
+			String passWord = "spring";
 			
 			String url = "jdbc:mysql://localhost/test";
 			
