@@ -11,9 +11,10 @@ public class ConnectToDB {
 			String userName = "root";
 			String passWord = "spring";
 			
-			String url = "jdbc:mysql://localhost/test";
+			String url = "jdbc:mysql://localhost/mydb?useSSL=false";    //?useSSL=false makes the program not to show warning 
 			
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			//Class.forName("com.mysql.jdbc.Driver").newInstance(); driver deprecated
+			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			
 			conn = DriverManager.getConnection(url, userName, passWord);
 			
