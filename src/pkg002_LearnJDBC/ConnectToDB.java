@@ -46,6 +46,14 @@ public class HelloWorld {
 
 /*
 
+Create a new Java project in Eclipse.
+Right click on the project folder, select Build Path, and from the submenu select Add External Archives...
+In the JAR Selection panel that comes up; browse to the j connector jar file in the folder you have downloaded the mysql j connector jar file.
+
+
+
+OR
+
 If you're facing this problem with Eclipse, I've been following many different solutions but the one that worked for me is this:
 
 Right click your project folder and open up Properties.
